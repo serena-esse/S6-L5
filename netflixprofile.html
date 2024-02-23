@@ -1,126 +1,112 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en">
   <head>
-    <!-- META_TAGS -->
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-
-    <!-- FONT -->
-
-    <!-- CSS -->
-
-    <link rel="stylesheet" href="./css/style.css" />
-
-    <!-- WEBPAGE_NAME -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Netflix Profile</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
-  <body>
+  <body class="bg-dark">
+    <!-- NAVBAR---------------------------------------------------------------------- -->
+
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./assets/netflix_logo.png" alt="netflix_logo" width="150" />
+        </a>
+      </div>
+    </nav>
+
+    <!-- MAIN ---------------------------------------------------------------------- -->
     <main>
-        <div class="container-fluid">
-          <div>
-            <section>
-              <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                  <div class="col col-lg-6 mb-4 mb-lg-0">
-  
-  
-                    <div class="mb-3">
-  
-                      <div class="row g-0">
-  
-                        <div class="col-md-4 text-end">
-                          <h1>Edit profile</h1>
-                          
-                          
-                        </div>
-                        <hr class="mt-0 mb-4" />
-  
-                      </div>
-  
-                    </div>
-  
-  
-                  </div>
-  
-  
-  
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                  <div class="col col-lg-6 mb-4 mb-lg-0">
-                    <div class="mb-3">
-                      <div class="row g-0">
-                        <div class="col-md-4 text-end">
-                          <img
-                            src="./assets/avatar.png"
-                            alt="Avatar"
-                            class="img-fluid mb-5"
-                            style="width: 80%"
-                          />
-                        </div>
-                        <div class="col-md-8">
-                          <div class="card-body p-4 ">
-                            
-                            <div class="row pt-1">
-                              <div class="col-12 mb-3 p-2 bg-secondary">
-                                <h6>Strive Student</h6>
-                              </div>
-                              <div class="col-12 mb-3"></div>
-                            </div>
-                            <div class="col-12 mb-3 p-2 ">
-                              <h6>Language:</h6>
-                            </div>
-                            <div>
-                              <div class="dropdown mb-3">
-                                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                  Dropdown button
-                                </button>
-                                <ul class="dropdown-menu">
-                                  <li><a class="dropdown-item" href="#">Action</a></li>
-                                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                              </div>
-  
-                            <hr class="mt-0 mb-4" />
-                            <div class="row pt-1">
-                              <div class="col-6 mb-3">
-                                <h6>Recent</h6>
-                                <p class="text-muted">Lorem ipsum</p>
-                              </div>
-                              <div class="col-6 mb-3">
-                                <h6>Most Viewed</h6>
-                                <p class="text-muted">Dolor sit amet</p>
-                              </div>
-                            </div>
-                            <div class="d-flex justify-content-start">
-                              <a href="#!"><i class="fab fa-facebook-f fa-lg me-3"></i></a>
-                              <a href="#!"><i class="fab fa-twitter fa-lg me-3"></i></a>
-                              <a href="#!"><i class="fab fa-instagram fa-lg"></i></a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+      <div class="container-fluid bg-dark">
+        <div class="row">
+          <div class="col col-6 offset-3">
+            <h1 class="text-bg-dark fs-1">Edit Profile</h1>
+            <hr class="text-bg-dark" />
+
+            <div class="row">
+              <div class="col col-2">
+                <img src="./assets/avatar.png" alt="avatar" width="100px" class="rounded-3 img-fluid" />
+              </div>
+
+              <div class="col col-8 mb-4">
+                <p class="text-bg-dark bg-secondary fs-5 mb-3 ps-2">Strive Student</p>
+                <p class="text-bg-dark">Language:</p>
+                <div class="dropdown">
+                  <a
+                    class="btn btn-dark border-white rounded-0 dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    English
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Italian</a></li>
+                    <li><a class="dropdown-item" href="#">Spanish</a></li>
+                    <li><a class="dropdown-item" href="#">French</a></li>
+                  </ul>
+                </div>
+
+                <hr class="text-bg-dark" />
+
+                <p class="text-bg-dark text-light fs-5">Maturity Settings:</p>
+                <div class="row">
+                  <p class="fs-6 mb-3">
+                    <mark class="bg-secondary text-bg-dark p-2"> ALL MATURITY RATINGS</mark>
+                  </p>
+                  <p class="text-bg-dark">Show titles of all maturity ratings for this profile.</p>
+                  <a class="btn btn-outline-secondary rounded-0 ms-2 mb-3 col-3"> EDIT </a>
+                </div>
+
+                <hr class="text-bg-dark" />
+
+                <p class="text-bg-dark text-light fs-5">Autoplay controls</p>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label text-bg-dark" for="flexCheckDefault">
+                    Autoplay next episode in a series on all devices.
+                  </label>
+                </div>
+                <div class="form-check">
+                  <input class="form-check-input bg-dark" type="checkbox" value="" id="flexCheckDefault" />
+                  <label class="form-check-label text-bg-dark" for="flexCheckDefault">
+                    Autoplay previews while browsing on all devices.
+                  </label>
                 </div>
               </div>
-            </section>
+
+              <hr class="text-bg-dark" />
+            </div>
+            <div class="row bg-dark">
+              <div class="col col-3">
+                <a class="btn btn-light rounded-0 ms-2 mb-4 px-5"> SAVE </a>
+              </div>
+              <div class="col col-2">
+                <a class="btn btn-outline-secondary rounded-0 ms-2 mb-4 px-3"> CANCEL </a>
+              </div>
+              <div class="col col-4">
+                <a class="btn btn-outline-secondary rounded-0 ms-2 mb-4"> DELETE PROFILE </a>
+              </div>
+            </div>
           </div>
         </div>
-      </main>
-    
-          
-      
+      </div>
+    </main>
 
-
-       
-
-     
-    <!--BEGIN_SCRIPT_JVASCRIPT-->
     <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="./index.js "></script>
   </body>
 </html>
