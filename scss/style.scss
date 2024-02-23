@@ -1,0 +1,10 @@
+@import "./partials/bootstrap-overrides";
+
+footer li:hover {
+  text-decoration: underline;
+}
+
+footer {
+  margin: 0 auto;
+  max-width: 85%;
+}
